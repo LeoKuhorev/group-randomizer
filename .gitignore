@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/python,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,macos
+# Created by https://www.toptal.com/developers/gitignore/api/python,vscode,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,vscode,macos
 
 ### macOS ###
 # General
@@ -171,4 +171,12 @@ dmypy.json
 # profiling data
 .prof
 
-# End of https://www.toptal.com/developers/gitignore/api/python,macos
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# End of https://www.toptal.com/developers/gitignore/api/python,vscode,macos

@@ -11,8 +11,8 @@ def stringify(L: list[list[str]]) -> str:
         str: Final string with the given values printed as groups
     """
     output = ''
-    for pair in L:
-        output += ' - '.join(pair) + '\n'
+    for group in L:
+        output += ' - '.join(group) + '\n'
 
     return output
 
