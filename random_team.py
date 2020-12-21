@@ -43,4 +43,4 @@ if __name__ == "__main__":
                 'Amber F.', 'Mason F.', 'Brandon G.', 'Sean H.', 'Ben H.', 'Matthew H.',
                 'Logan J.', 'Nebiyu K.', 'Alan M.', 'Audrena S.']
 
-    print(get_random_pairs(students, 3))
+    print(get_random_pairs(students))
