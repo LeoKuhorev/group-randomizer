@@ -2,6 +2,14 @@ import random
 
 
 def stringify(L: list[list[str]]) -> str:
+    """Format the given list of lists of string values into the string that has those items printed as a group of values divided with ' - ' with each group starting from the new line
+
+    Args:
+        L (list[list[str]]): List of lists of grouped values
+
+    Returns:
+        str: Final string with the given values printed as groups
+    """
     output = ''
     for pair in L:
         output += ' - '.join(pair) + '\n'
@@ -37,9 +45,30 @@ def get_random_pairs(students: list, students_per_group: int = 2) -> str:
 
 
 if __name__ == "__main__":
-    students = ['Alexander A.', 'Anthony B.', 'Bhagirath B.', 'Robert C.', 'Louis C.',
-                'Ashley C.', 'Grace C.', 'Jae C.', 'Samuel C.', 'Sian C.', 'Kim D.', 'Nick D.',
-                'Amber F.', 'Mason F.', 'Brandon G.', 'Sean H.', 'Ben H.', 'Matthew H.',
-                'Logan J.', 'Nebiyu K.', 'Alan M.', 'Audrena S.']
+    STUDENTS = [
+        # Absent students can be commented out below
+        'Alan',
+        'Alexander',
+        'Amber',
+        'Anthony',
+        'Ashley',
+        'Audrena',
+        'Ben',
+        'Bhagirath',
+        'Brandon',
+        'Grace',
+        'Jae',
+        'Kim',
+        'Logan',
+        'Louis',
+        'Mason',
+        'Matthew',
+        'Nebiyu',
+        'Nick',
+        'Robert',
+        'Samuel',
+        'Sean',
+        'Sian'
+        ]
 
-    print(get_random_pairs(students))
+    print(get_random_pairs(STUDENTS))
